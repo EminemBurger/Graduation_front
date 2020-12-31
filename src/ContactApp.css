@@ -11,7 +11,8 @@ h1 {
 .contact-section {
     background: url(images/contact-bg.jpg) no-repeat center;
     background-size: cover;
-    height: 95vh;
+    min-height: 1000px;
+    min-width: 1130px;
     padding: 40px 0;
 }
 

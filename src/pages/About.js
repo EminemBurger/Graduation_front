@@ -49,12 +49,8 @@ export default function Mappage()
             <div class="section" id="p3">
                 <div class="name">Kim Dong Hyun</div>
                 <div class="about-border"></div>
-                <p>
-                섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새
-                섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새
-                섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새
-                섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새
-                섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새섹무새
+                <p style={{textAlign:"center"}}>
+                21511722 컴퓨터공학과 김동현
                 </p>
             </div>
 

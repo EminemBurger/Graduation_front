@@ -11,10 +11,11 @@ import Logo from './images/logo.png';
 
 function App() {
   return (
+    <div className="wrap">
     <BrowserRouter>
-      <nav>
+      <nav className="main_nav">
         <img className="logo" src={Logo} alt="" />
-        <ul className="nav_ul_and_li" >
+        <ul className="nav_hh" >
           <Link to="/"><li className="nav_ul_and_li">Home</li></Link>
           <Link to="/about"><li className="nav_ul_and_li">About Us</li></Link>
           <Link to="/contact"><li className="nav_ul_and_li">Contact</li></Link>
@@ -29,6 +30,8 @@ function App() {
         <Route exact path="/register" component={Regs} />
       </Switch>
     </BrowserRouter>
+    </div>
+
   );
 }
 

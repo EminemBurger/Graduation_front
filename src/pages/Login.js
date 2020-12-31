@@ -76,25 +76,9 @@ export default class Login extends Component {
 						</div>
 					</div>
 
-					<div className="txt1 text-center p-t-54 p-b-20">
-						<span>
-							Or Sign Up Using
-						</span>
-					</div>
+		
 
-					<div className="flex-c-m">
-						<a href="#" className="login100-social-item bg1">
-							<i className="fa fa-facebook"></i>
-						</a>
-
-						<a href="#" className="login100-social-item bg2">
-							<i className="fa fa-twitter"></i>
-						</a>
-
-						<a href="#" className="login100-social-item bg3">
-							<i className="fa fa-google"></i>
-						</a>
-					</div>
+		
 
 					<div className="flex-col-c p-t-155">
 						<span className="txt1 p-b-17">

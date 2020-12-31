@@ -7,28 +7,16 @@
 }
 
 .kakaoMap {
-  width: 100%;
-  height: 90vh;
+  min-width: 1190px;
+  height: 1115px;
   position: 'relative';
-  overflow: 'hidden';
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.hAddr {
-  position:absolute;
-  left:7px;
-  top:700px;
-  border-radius: 2px;
-  background:rgba(233,233,233,0.6);
-  font-size: 15px;
-  color: black;
-  z-index:3;
-  padding:1px;
-}
+
 
 .team-section {
-  height: 95vh;  
+  min-height: 1000px;  
+  min-width: 1130px;
   text-align: center;
   background: #34495e;
   padding: 40px 0;
@@ -110,12 +98,15 @@
 
 nav {
   background-color: #08548a;
+  position: relative;
   height: 45px;
+  min-width:1190px;
+  align-items: center;
 }
 
 nav ul {
   float: right;
-  margin-right: 50px;
+  margin-right: 10px;
 }
 
 nav ul li {
@@ -127,38 +118,16 @@ nav ul li {
   text-decoration: none;
 }
 
-.logo {
-  height: 40px;
-  width: 70px;
-}
-
-.result {
-  position:absolute;
-  left:90%;
-  top:94%;
-  border-radius: 2px;
-  background-color: rgba(233,233,233,0.6);
-  font-size: 20px;
-  color: black;
-  z-index:1;
-  padding:1px;
-}
-
-.loading {
-  position:absolute;
-  background-image:  url("./images/loading.gif") ;
-  background-size: cover;
-  background-position-y: center;
-  left:92%;
-  top:87%;
-  width: 120px;
-  height: 80px;
-  z-index: 5;
-}
-
 .nav_ul_and_li {
   margin-bottom: 0rem;
 }
+
+.nav_hh {
+  margin-bottom: 0rem;
+}
+
+
+
 
 .close {
   position: absolute;
@@ -210,45 +179,106 @@ p {
   text-align: right;
 }
 
-.map_carousel {
-  border-style: solid none;
-  border-color: gray;
-  border-width: 2px;
-  text-align: center;
-  background-color: #E9E9E9;
-}
+  .wrap {
+    width: 100%;
+    overflow: hidden;
 
-.map_carousel a {
-  border-style: none solid;
-  border-color: gray;
-  border-width: 1px;
-  color: black;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 57px;
-  padding-right: 57px;
-}
+  }
 
-.map_carousel :hover {
-  background-color: #3498db;
-  color: white;
-}
+
+  .map_carousel {
+    min-width: 1190px;
+    height: 30px;
+    border-style: solid none;
+    border-color: gray;
+    border-width: 2px;
+    text-align: center;
+    background-color: #E9E9E9;
+  }
+
+  .map_carousel a {
+    border-style: none solid;
+    border-color: gray;
+    border-width: 1px;
+    color: black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .map_carousel :hover {
+    background-color: #3498db;
+    color: white;
+  }
+
+
+
+  .logo {
+    height: 40px;
+    width: 70px;
+    float: left;
+  }
+
+
+
+  .result {
+    position:relative;
+    width: 100px;
+    border-radius: 2px;
+    background-color: rgba(233,233,233,0.6);
+    font-size: 20px;
+    color: black;
+    z-index:1;
+    top:-150px;
+    left: 1000px;
+    text-align: center;
+
+  
+  }
+
+
+  .loading {
+    position:relative;
+    background-image:  url("./images/loading.gif") ;
+    background-size: cover;
+    background-position-y: center;
+    left: 1000px;
+    top:-150px;
+    width: 100px;
+    height: 80px;
+    z-index: 5;
+  }
+  
+
+  .hAddr {
+    position:relative;
+    left:10px;
+    top:-80px;
+    width: 170px;
+    
+    border-radius: 2px;
+    background:rgba(233,233,233,0.6);
+    font-size: 15px;
+    color: black;
+    z-index:3;
+    padding:1px;
+  }
+
+
 
 .labels {
-  position:absolute;
+  position:relative;
+  width:250px;
+  height:40px;
   font-size: 15px;
   z-index:5;
-  padding:1px;
-  top: 721px;
-  left: 580px;
+  top: -100px;
+  right: -500px;
+
 }
 
-.labels td {
-  font-family: 'Do Hyeon', sans-serif;
-  font-size: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
+
 #labels_good {
   background-color: green;
   color: white;
@@ -268,6 +298,16 @@ p {
   color: white;
 }
 
+
+.labels td {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  
+}
+
 #modal_in_p {
   font-family: 'Sunflower', sans-serif;
   font-size: 16px;
@@ -278,13 +318,13 @@ p {
 
 .modal_good {
   font-weight: 50;
-  position: absolute;
+  position: relative;
   width: 170px;
   height: 200px;
   background-color: white;
   border-radius: 5px;
-  left: 560px;
-  top: 510px;
+  left: -50px;
+  top: -250px;
   z-index: 2;
   border-style: solid;
   border-color: antiquewhite;
@@ -305,13 +345,13 @@ p {
 }
 
 .modal_moderate {
-  position: absolute;
+  position: relative;
   width: 170px;
   height: 200px;
   background-color:white;
   border-radius: 5px;
-  left: 650px;
-  top: 510px;
+  left: 40px;
+  top: -250px;
   z-index: 2;
   border-style: solid;
   border-color: antiquewhite;
@@ -331,13 +371,29 @@ p {
 }
 
 .modal_unhealthy {
-  position: absolute;
+  position: relative;
   width: 170px;
   height: 200px;
   background-color: white;
   border-radius: 5px;
-  left: 740px;
-  top: 510px;
+  left: 130px;
+  top: -250px;
+  z-index: 2;
+  border-style: solid;
+  border-color: antiquewhite;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+
+.modal_hazardous {
+  position: relative;
+  width: 170px;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  left: 250px;
+  top: -250px;
   z-index: 2;
   border-style: solid;
   border-color: antiquewhite;
@@ -357,20 +413,6 @@ p {
   vertical-align: auto;
 }
 
-.modal_hazardous {
-  position: absolute;
-  width: 170px;
-  height: 200px;
-  background-color: white;
-  border-radius: 5px;
-  left: 850px;
-  top: 510px;
-  z-index: 2;
-  border-style: solid;
-  border-color: antiquewhite;
-  padding: 5px;
-  padding-top: 10px;
-}
 
 .modal_hazardous b {
   color: white;

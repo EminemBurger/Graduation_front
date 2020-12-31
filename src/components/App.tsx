@@ -6,8 +6,15 @@ import redDot from '../images/1.png'
 import yellowDot from '../images/2.png'
 import purpleDot from '../images/3.png'
 import greenDot from '../images/4.png'
-
 const { getStateColor } = require('../StateColor');
+
+
+
+
+
+
+
+
 
 declare global {
   interface Window {
@@ -72,7 +79,7 @@ const App: React.FC = (props) => {
     }
 
     
-    $.get('http://localhost:3002/public/test.json', function (data: any) {
+    $.get('test.json', function (data: any) {
 
       let imageSrc = ''
       const imageSize = new window.kakao.maps.Size(20, 20)
@@ -232,7 +239,7 @@ const App: React.FC = (props) => {
   }
 
   return (
-    <div>
+    <div style={{height:"1145px"}}>
       <div className="map_carousel">
         <a href="#" onClick={() => setCenter(37.275127, 127.009438)}>경기도</a>
         <a href="#" onClick={() => setCenter(37.885382, 127.729768)}>강원도</a>
@@ -248,7 +255,18 @@ const App: React.FC = (props) => {
       <div className="hAddr">
         <span id="centerAddr"></span>
       </div>
-      <div className="modal_good" style={{ display: modalVisible[0] }}>
+
+      <div className="labels">
+        <table>
+          <tr>
+            <td id="labels_good" onMouseOver={() => modalMouseOver(0)} onMouseOut={() => modalMouseOut(0)}>좋음</td>
+            <td id="labels_moderate" onMouseOver={() => modalMouseOver(1)} onMouseOut={() => modalMouseOut(1)}>보통</td>
+            <td id="labels_unhealthy" onMouseOver={() => modalMouseOver(2)} onMouseOut={() => modalMouseOut(2)}>나쁨</td>
+            <td id="labels_hazardous" onMouseOver={() => modalMouseOver(3)} onMouseOut={() => modalMouseOut(3)}>매우 나쁨</td>
+          </tr>
+        </table>
+
+        <div className="modal_good" style={{ display: modalVisible[0] }}>
         <b>좋음</b>
         <p id="modal_in_p">대기오염 관련 질환자군에서도 영향이 유발되지 않을 수준</p>
       </div>
@@ -264,18 +282,21 @@ const App: React.FC = (props) => {
         <b>매우 나쁨</b>
         <p id="modal_in_p">환자군 및 민감군에게 급성 노출시 심각한 영향 유발, 일반인도 약한 영향이 유발될 수 있는 수준</p>
       </div>
-      <div className="labels">
-        <table>
-          <tr>
-            <td id="labels_good" onMouseOver={() => modalMouseOver(0)} onMouseOut={() => modalMouseOut(0)}>좋음</td>
-            <td id="labels_moderate" onMouseOver={() => modalMouseOver(1)} onMouseOut={() => modalMouseOut(1)}>보통</td>
-            <td id="labels_unhealthy" onMouseOver={() => modalMouseOver(2)} onMouseOut={() => modalMouseOut(2)}>나쁨</td>
-            <td id="labels_hazardous" onMouseOver={() => modalMouseOver(3)} onMouseOut={() => modalMouseOut(3)}>매우 나쁨</td>
-          </tr>
-        </table>
+
       </div>
       <Tensor />
     </div>
+
+/*
+<div>
+{isPc && <p>pc</p>}
+{isTablet && <p>tablet</p>}
+{isTabletPC && <p>tablet_pc</p>}
+{isMobileTablet && <p>mobile_tablet</p>}
+{isMobile && <p>mobile</p>}
+
+</div>
+*/
   );
 }
 

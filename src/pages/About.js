@@ -1,10 +1,6 @@
 import React from 'react';
 import '../App.css';
-import PJH from '../images/PJH.jpg'
 import LSS from '../images/LSS.jpg'
-import KDH from '../images/KDH.jpg'
-import LSK from '../images/LSK.jpg'
-import SCW from '../images/SCW.jpg'
 
 export default function Mappage() 
 {
@@ -16,21 +12,19 @@ export default function Mappage()
             <div class="about-border"></div>
             <div class="ps">
                 <a href="#p1"><img src={LSS} alt=""/></a>
-                <a href="#p2"><img src={PJH} alt=""/></a>
-                <a href="#p3"><img src={KDH} alt=""/></a>
-                <a href="#p4"><img src={LSK} alt=""/></a>
-                <a href="#p5"><img src={SCW} alt=""/></a>
+                <a href="#p2"><img src={LSS} alt=""/></a>
+                <a href="#p3"><img src={LSS} alt=""/></a>
+                <a href="#p4"><img src={LSS} alt=""/></a>
+                <a href="#p5"><img src={LSS} alt=""/></a>
             </div>
 
             <div class="section" id="p1">
                 <div class="name">Lee Sang Seok</div>
                 <div class="about-border"></div>
                 <p>
-                정신나갈거같애정신나갈거같애정신나갈거같애정신나갈거같애
-                정신나갈거같애정신나갈거같애정신나갈거같애정신나갈거같애
-                정신나갈거같애정신나갈거같애정신나갈거같애정신나갈거같애
-                정신나갈거같애정신나갈거같애정신나갈거같애정신나갈거같애
-                정신나갈거같애정신나갈거같애정신나갈거같애정신나갈거같애
+                현재 벤츠에서 인턴으로 근무중.
+                오공에서 하드웨어 구축과 클라우드 서비스
+                연동을 담당하셨음. 본 프로젝트의 팀장.
                 </p>
             </div>
 
@@ -38,11 +32,8 @@ export default function Mappage()
                 <div class="name">Park Jae Hyun</div>
                 <div class="about-border"></div>
                 <p>
-                아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...
-                아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...
-                아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...
-                아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...
-                아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...아 타릭 따먹고 싶다...
+                현재 대학원 다니는중.
+                오공에서 텐서플로우 기능을 담당하셨음.
                 </p>
             </div>
 
@@ -50,7 +41,9 @@ export default function Mappage()
                 <div class="name">Kim Dong Hyun</div>
                 <div class="about-border"></div>
                 <p style={{textAlign:"center"}}>
-                21511722 컴퓨터공학과 김동현
+                현재 취직준비중. 직업은 백수가 아닌 취준생.
+                오공에서 반응형웹 부분과 useEffect를 사용한
+                동적 렌더링 담당. 로그인 페이지 담당했음.
                 </p>
             </div>
 
@@ -58,11 +51,9 @@ export default function Mappage()
                 <div class="name">Lee Sung Keun</div>
                 <div class="about-border"></div>
                 <p>
-                로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄
-                로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄
-                로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄
-                로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄
-                로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄로리콘은범죄
+                졸업학점이 부족해 아직 대학교 다니는중.
+                오공에서 백엔드 부분과 카카오맵 api를 활용한
+                맵 구현 부분을 담당하셨음.
                 </p>
             </div>
 
@@ -70,11 +61,10 @@ export default function Mappage()
                 <div class="name">Son Chang Won</div>
                 <div class="about-border"></div>
                 <p>
-                동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요
-                동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요
-                동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요
-                동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요
-                동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요동현님사랑해요
+                대구 예대를 다니고 있는 학생.
+                김동현의 친구로 본 프로젝트에서
+                오공의 로고를 직접 디자인 하셨고,
+                미세먼지 농도의 마커를 디자인 하셨다.
                 </p>
             </div>
         </div>

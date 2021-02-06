@@ -4,7 +4,7 @@ import * as tf from '@tensorflow/tfjs';
 
 export default function TensorLoading() {
     const [loading, setloading] = useState(true);
-    const [currentData, setData] = useState(0);
+    const [currentData, setData] = useState('0');
     const [boxColor, setBoxColor] = useState({
         backgroundColor: "",
         color: ""
@@ -17,7 +17,7 @@ export default function TensorLoading() {
             const preVal = [38];
             var res;
 
-            const model = tf.sequential();
+            const model : any = tf.sequential();
             model.add(tf.layers.dense({ units: 1, inputShape: [1] }));
             model.compile({ loss: 'meanSquaredError', optimizer: tf.train.sgd(0.001) });
 

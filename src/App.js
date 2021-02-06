@@ -1,17 +1,16 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import './App.css';
-import Mappage from './pages/Mappage';
+import Mappage from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './pages/Login'
-import Regs from './pages/Register'
 import { Link } from 'react-router-dom';
 import Logo from './images/logo.png';
 
 function App() {
   return (
-    <div className="wrap">
+    <div>
     <BrowserRouter>
       <nav className="main_nav">
         <img className="logo" src={Logo} alt="" />
@@ -27,7 +26,6 @@ function App() {
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/register" component={Regs} />
       </Switch>
     </BrowserRouter>
     </div>

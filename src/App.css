@@ -8,7 +8,7 @@
 
 .kakaoMap {
   min-width: 1190px;
-  height: 1115px;
+  height: 1100px;
   position: 'relative';
 }
 
@@ -52,7 +52,7 @@
 .ps a {
   display: inline-block;
   margin: 0 30px;
-  width: 160px;
+  width: 180px;
   height: 160px;
   overflow: hidden;
   border-radius: 50%;
@@ -60,6 +60,7 @@
 
 .ps a img {
   width: 100%;
+  height: 100%;
   filter: grayscale(100%);
   transition: 0.5s all;
 }
@@ -175,15 +176,9 @@ tr {
   border: 1px solid;
 }
 
-p {
-  text-align: right;
-}
 
-  .wrap {
-    width: 100%;
-    overflow: hidden;
 
-  }
+
 
 
   .map_carousel {

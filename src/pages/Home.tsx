@@ -4,7 +4,7 @@ import Addr from '../components/Addr'
 import Carousel from '../components/Carousel'
 import Map from '../components/Map'
 import Modal from '../components/Modal'
-
+import TensorFlow from '../components/TensorLoading'
 
 export default function Home() 
 {
@@ -16,6 +16,7 @@ export default function Home()
             <Map/>
             <Addr/>
             <Modal/>
+            <TensorFlow/>
         </div>
     );
 }
